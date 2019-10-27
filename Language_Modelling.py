@@ -20,7 +20,7 @@ start_time = time.clock()
 global laplace_constant
 laplace_constant=[1,0.1,0.01,0.001,0.0001]
 
-fp_out=open("Assignment_1_18CS71P03.txt","w")
+fp_out=open("output","w")
 x = [sent for sent in b.sents()[0:40000]]
 temp = [[" ".join([re.sub('[^A-Za-z-\']+', '', item.lower()) for item in sent])] for sent in x]
 temp = [[" ".join([item.strip() for item in sent])] for sent in temp]
